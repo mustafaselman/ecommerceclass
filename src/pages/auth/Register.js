@@ -27,7 +27,7 @@ const Register = () => {
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log(user);
+          // console.log(user);
           setIsLoading(false);
           toast.success("Registration succsessfull..");
           navigate("/login");

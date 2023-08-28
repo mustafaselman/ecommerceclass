@@ -12,7 +12,7 @@ const useFetchDocument = (collectionName,documentID) => {
       const getDocument = async () => {
         const docRef = doc(db,collectionName,documentID)
         onSnapshot(docRef,(doc)=>{
-          console.log("document data:",doc.data())
+          // console.log("document data:",doc.data())
           const obj = {
             id: documentID,
             ...doc.data()
